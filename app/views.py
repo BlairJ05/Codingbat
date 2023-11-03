@@ -15,7 +15,7 @@ def string_splosion(request:HttpRequest,str:str):
         word = word + str[: i + 1]
     return HttpResponse(word)
 
-# this if statment looks through the string and looks for cat and dog. if cat and dog exist in the same string it will return true
+# This if statment looks through the string and looks for cat and dog. if cat and dog exist in the same string it will return true
 def cat_dog(request:HttpRequest, str:str):
     if str.count("cat") == str.count("dog"):
         return HttpResponse(True)
